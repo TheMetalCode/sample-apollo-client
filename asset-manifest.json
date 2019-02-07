@@ -1,6 +1,6 @@
 {
-  "main.js": "/sample-apollo-client/static/js/main.52f2f1a5.chunk.js",
-  "main.js.map": "/sample-apollo-client/static/js/main.52f2f1a5.chunk.js.map",
+  "main.js": "/sample-apollo-client/static/js/main.5b0873b5.chunk.js",
+  "main.js.map": "/sample-apollo-client/static/js/main.5b0873b5.chunk.js.map",
   "static/js/1.230d9e89.chunk.js": "/sample-apollo-client/static/js/1.230d9e89.chunk.js",
   "static/js/1.230d9e89.chunk.js.map": "/sample-apollo-client/static/js/1.230d9e89.chunk.js.map",
   "runtime~main.js": "/sample-apollo-client/static/js/runtime~main.def29798.js",
@@ -20,6 +20,6 @@
   "static/media/curve.33d00d40.svg": "/sample-apollo-client/static/media/curve.33d00d40.svg",
   "static/media/rocket.aeabe034.svg": "/sample-apollo-client/static/media/rocket.aeabe034.svg",
   "index.html": "/sample-apollo-client/index.html",
-  "precache-manifest.0986043fdf665939a5d551a11da8aba4.js": "/sample-apollo-client/precache-manifest.0986043fdf665939a5d551a11da8aba4.js",
+  "precache-manifest.c797770cc2167077a531d134777a82ce.js": "/sample-apollo-client/precache-manifest.c797770cc2167077a531d134777a82ce.js",
   "service-worker.js": "/sample-apollo-client/service-worker.js"
 }
