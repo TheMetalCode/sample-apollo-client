@@ -22,7 +22,7 @@ const client = new ApolloClient({
     headers: {
       authorization: localStorage.getItem('token'),
       'apollographql-client-name': 'Space Explorer [web]',
-      'apollographql-client-version': '1.0.0',
+      'apollographql-client-version': '1.1.0',
     },
   }),
   resolvers,
