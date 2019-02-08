@@ -97,8 +97,10 @@ workflows:
       - deploy:
           filters:
             branches:
-              only:
-                - master
+              ignore:
+                - gh-pages
+              # only:
+              #   - master
           requires:
             - unit_tests
             - schema_check
