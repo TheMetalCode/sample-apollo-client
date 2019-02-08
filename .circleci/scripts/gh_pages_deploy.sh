@@ -3,14 +3,14 @@
 set -x
 set -e
 
-if [[ $CIRCLE_BRANCH = $SOURCE_BRANCH ]]; then
+if [[ $CIRCLE_BRANCH = "master" ]]; then
   git config --global user.email $GH_EMAIL
   git config --global user.name $GH_NAME
 
   git clone $CIRCLE_REPOSITORY_URL out
 
   cd out
-  git checkout $TARGET_BRANCH || git checkout --orphan $TARGET_BRANCH
+  git checkout gh-pages || git checkout --orphan gh-pages
   git rm -rf .
   cd ..
 
@@ -24,5 +24,5 @@ if [[ $CIRCLE_BRANCH = $SOURCE_BRANCH ]]; then
   git add -A
   git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
 
-  git push origin $TARGET_BRANCH
+  git push origin gh-pages
 fi
