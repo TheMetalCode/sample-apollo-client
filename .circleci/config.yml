@@ -66,6 +66,10 @@ jobs:
       - attach_workspace:
           at: ~/
 
+      - add_ssh_keys:
+          fingerprints:
+            - "6c:94:56:30:3d:e3:49:76:f0:41:34:8c:12:c5:db:a9"
+
       - run:
           name: Build and Deploy to GH Pages
           command: .circleci/scripts/gh_pages_deploy.sh
