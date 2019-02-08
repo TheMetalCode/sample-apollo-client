@@ -86,7 +86,7 @@ workflows:
           requires:
             - unit_tests
             - schema_check
-          filters:
-            branches:
-              only:
-                - master
+          # filters:
+          #   branches:
+          #     only:
+          #       - master
