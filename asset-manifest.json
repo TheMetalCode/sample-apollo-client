@@ -1,8 +1,8 @@
 {
-  "main.js": "/sample-apollo-client/static/js/main.5b0873b5.chunk.js",
-  "main.js.map": "/sample-apollo-client/static/js/main.5b0873b5.chunk.js.map",
-  "static/js/1.230d9e89.chunk.js": "/sample-apollo-client/static/js/1.230d9e89.chunk.js",
-  "static/js/1.230d9e89.chunk.js.map": "/sample-apollo-client/static/js/1.230d9e89.chunk.js.map",
+  "main.js": "/sample-apollo-client/static/js/main.f2b025d4.chunk.js",
+  "main.js.map": "/sample-apollo-client/static/js/main.f2b025d4.chunk.js.map",
+  "static/js/1.7e08b46c.chunk.js": "/sample-apollo-client/static/js/1.7e08b46c.chunk.js",
+  "static/js/1.7e08b46c.chunk.js.map": "/sample-apollo-client/static/js/1.7e08b46c.chunk.js.map",
   "runtime~main.js": "/sample-apollo-client/static/js/runtime~main.def29798.js",
   "runtime~main.js.map": "/sample-apollo-client/static/js/runtime~main.def29798.js.map",
   "static/media/logo.3e5f8e36.svg": "/sample-apollo-client/static/media/logo.3e5f8e36.svg",
@@ -20,6 +20,6 @@
   "static/media/curve.33d00d40.svg": "/sample-apollo-client/static/media/curve.33d00d40.svg",
   "static/media/rocket.aeabe034.svg": "/sample-apollo-client/static/media/rocket.aeabe034.svg",
   "index.html": "/sample-apollo-client/index.html",
-  "precache-manifest.c797770cc2167077a531d134777a82ce.js": "/sample-apollo-client/precache-manifest.c797770cc2167077a531d134777a82ce.js",
+  "precache-manifest.6dc2c3e79ffd06a4dce6df6bb6ecfb66.js": "/sample-apollo-client/precache-manifest.6dc2c3e79ffd06a4dce6df6bb6ecfb66.js",
   "service-worker.js": "/sample-apollo-client/service-worker.js"
 }

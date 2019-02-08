@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/sample-apollo-client/static/media/space.7dfc7923.jpg"
   },
   {
-    "revision": "5b0873b5fb0e31d7012a",
-    "url": "/sample-apollo-client/static/js/main.5b0873b5.chunk.js"
+    "revision": "f2b025d497c61c2b43b4",
+    "url": "/sample-apollo-client/static/js/main.f2b025d4.chunk.js"
   },
   {
     "revision": "def297983d87b49ab201",
@@ -64,11 +64,11 @@ self.__precacheManifest = [
     "url": "/sample-apollo-client/static/media/curve.33d00d40.svg"
   },
   {
-    "revision": "230d9e890bbd03dbb3e1",
-    "url": "/sample-apollo-client/static/js/1.230d9e89.chunk.js"
+    "revision": "7e08b46c58a5eb223f89",
+    "url": "/sample-apollo-client/static/js/1.7e08b46c.chunk.js"
   },
   {
-    "revision": "165a6caa1cb1994dc8c322de411df949",
+    "revision": "cf35527f76f1a205213f45c0e0265226",
     "url": "/sample-apollo-client/index.html"
   }
 ];
