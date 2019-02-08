@@ -1,0 +1,86 @@
+version: 2.1
+
+executors:
+  build_container:
+    working_directory: ~/workspace
+    docker:
+      - image: circleci/node:10
+
+jobs:
+  set_up_workspace:
+    executor: build_container
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - yarn-cache-v1-{{ checksum "yarn.lock" }}
+            - yarn-cache-v1-
+
+      - run:
+          name: Install yarn dependencies
+          command: yarn install
+
+      - save_cache:
+          key: yarn-cache-v1-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+
+      - persist_to_workspace:
+          root: ~/
+          paths:
+            - workspace
+
+  unit_tests:
+    executor: build_container
+    steps:
+      - attach_workspace:
+          at: ~/
+
+      - run:
+          name: npm test
+          command: npm run test
+
+  schema_check:
+    executor: build_container
+    steps:
+      - attach_workspace:
+          at: ~/
+
+      - run:
+          name: apollo client:check
+          command: npx apollo client:check
+
+      - run:
+          name: apollo client:push if master
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              npx apollo client:push
+            else
+              echo "Not master, not pushing"
+            fi
+
+workflows:
+  version: 2.1
+
+  build_and_test:
+    jobs:
+      - set_up_workspace:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+      - unit_tests:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+          requires:
+            - set_up_workspace
+      - schema_check:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
+          requires:
+            - set_up_workspace
