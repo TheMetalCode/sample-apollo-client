@@ -13,6 +13,7 @@ const mockLaunch = {
   isBooked: true,
   rocket: {
     id: 1,
+    name: 'tester',
     type: 'myRocket',
   },
   mission: {

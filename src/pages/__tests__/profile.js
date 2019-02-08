@@ -14,7 +14,8 @@ const mockLaunch = {
   rocket: {
     __typename: 'Rocket',
     id: 1,
-    type: 'myRocket',
+    name: 'tester',
+    type: 'myRocket'
   },
   mission: {
     __typename: 'Mission',
