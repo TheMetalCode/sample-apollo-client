@@ -67,26 +67,38 @@ jobs:
           at: ~/
 
       - run:
-          name: npm run deploy
-          command: npm run deploy
+          name: Build and Deploy to GH Pages
+          command: .circleci/scripts/gh_pages_deploy.sh
 
 workflows:
   version: 2.1
 
   build_and_test:
     jobs:
-      - set_up_workspace
+      - set_up_workspace:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
       - unit_tests:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
           requires:
             - set_up_workspace
       - schema_check:
+          filters:
+            branches:
+              ignore:
+                - gh-pages
           requires:
             - set_up_workspace
       - deploy:
+          filters:
+            branches:
+              only:
+                - master
           requires:
             - unit_tests
             - schema_check
-          # filters:
-          #   branches:
-          #     only:
-          #       - master
