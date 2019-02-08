@@ -11,6 +11,7 @@ export const LAUNCH_TILE_DATA = gql`
     isBooked
     rocket {
       id
+      name
       type
     }
     mission {
